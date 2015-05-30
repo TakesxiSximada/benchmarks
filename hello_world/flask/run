@@ -1,0 +1,5 @@
+#! /usr/bin/env sh
+# -*- coding: utf-8 -*-
+THIS_FILE_PATH="$PWD/$0"
+cd ${THIS_FILE_PATH%/*}
+gunicorn benchmark:app --bind="0.0.0.0:8888" --threads 8
