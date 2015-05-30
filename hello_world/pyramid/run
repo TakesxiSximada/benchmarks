@@ -1,0 +1,5 @@
+#! /usr/bin/env sh
+# -*- coding: utf-8 -*-
+THIS_FILE_PATH="$PWD/$0"
+cd ${THIS_FILE_PATH%/*}
+env/bin/gunicorn_paster benchmark/development.ini
