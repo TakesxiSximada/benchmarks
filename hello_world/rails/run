@@ -1,0 +1,5 @@
+#! /usr/bin/env sh
+# -*- coding: utf-8 -*-
+THIS_FILE_PATH="$PWD/$0"
+cd ${THIS_FILE_PATH%/*}
+bundle exec unicorn_rails -p 8888 -c config/unicorn.rb
